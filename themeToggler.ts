@@ -18,7 +18,7 @@ interface SaveThemeRequest {
 }
 
 const saveClientTheme: (theme: SaveThemeRequest) => void
-    = findByCodeLazy('type:"UNSYNCED_USER_SETTINGS_UPDATE",settings:{useSystemTheme:null!=');
+    = findByCodeLazy('type:"UNSYNCED_USER_SETTINGS_UPDATE', '"system"===');
 
 /**
  * @param theme A Discord theme
